@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.itmasir.com/"/>
-  <updated>2017-07-07T13:21:18.877Z</updated>
+  <updated>2017-07-07T14:52:02.746Z</updated>
   <id>http://www.itmasir.com/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>String阅读完成</title>
+    <link href="http://www.itmasir.com/2017/07/07/String%E9%98%85%E8%AF%BB%E5%AE%8C%E6%88%90/"/>
+    <id>http://www.itmasir.com/2017/07/07/String阅读完成/</id>
+    <published>2017-07-07T14:47:42.000Z</published>
+    <updated>2017-07-07T14:52:02.746Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="完成think-in-java-String-阅读"><a href="#完成think-in-java-String-阅读" class="headerlink" title="完成think_in_java String 阅读"></a>完成think_in_java String 阅读</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>完成了第13章对于String的阅读,对于在任何语言中都显得最重要,也是最基础的字符串操作来说</p>
+<p>String本身无疑是很简单的,但是他是编程语言不可缺少的一部分,同时,可以灵活运用的正则给了String无限的可能性</p>
+<h2 id="明天会出两个小的跟String有关的Demo"><a href="#明天会出两个小的跟String有关的Demo" class="headerlink" title="明天会出两个小的跟String有关的Demo"></a>明天会出两个小的跟String有关的Demo</h2><h3 id="1-一个小的爬虫Demo-在网上爬取你想要的数据"><a href="#1-一个小的爬虫Demo-在网上爬取你想要的数据" class="headerlink" title="1:一个小的爬虫Demo,在网上爬取你想要的数据"></a>1:一个小的爬虫Demo,在网上爬取你想要的数据</h3><h3 id="2-一个可以通过关键字-在你的整个目录中查找文件的工具-显示具体文件名称和行号"><a href="#2-一个可以通过关键字-在你的整个目录中查找文件的工具-显示具体文件名称和行号" class="headerlink" title="2:一个可以通过关键字,在你的整个目录中查找文件的工具(显示具体文件名称和行号)"></a>2:一个可以通过关键字,在你的整个目录中查找文件的工具(显示具体文件名称和行号)</h3><p>明天或者后天正式开始第14章 类型信息的阅读</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;完成think-in-java-String-阅读&quot;&gt;&lt;a href=&quot;#完成think-in-java-String-阅读&quot; class=&quot;headerlink&quot; title=&quot;完成think_in_java String 阅读&quot;&gt;&lt;/a&gt;完成think_in_
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>说明</title>
