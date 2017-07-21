@@ -41,6 +41,16 @@
     
 
 
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?abd519336376c4957f2736fba654af13";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 </head>
 
 <body>
@@ -54,11 +64,9 @@
             </a>
             <nav id="main-nav">
                 
-                    <a class="main-nav-link" href="/.">主页</a>
+                    <a class="main-nav-link" href="/.">首页</a>
                 
-                    <a class="main-nav-link" href="/archives">目录</a>
-                
-                    <a class="main-nav-link" href="/about">关于我</a>
+                    <a class="main-nav-link" href="/archives">归档</a>
                 
             </nav>
             
@@ -115,11 +123,9 @@
         <table class="menu outer">
             <tr>
                 
-                    <td><a class="main-nav-link" href="/.">主页</a></td>
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
                 
-                    <td><a class="main-nav-link" href="/archives">目录</a></td>
-                
-                    <td><a class="main-nav-link" href="/about">关于我</a></td>
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
                 
                 <td>
                     
@@ -131,6 +137,7 @@
             </tr>
         </table>
     </div>
+    <meta name="baidu-site-verification" content="B7Yu68XM85" />
 </header>
 
         <div class="outer">
@@ -148,11 +155,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                4
+                11
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                0
+                12
                 <span>标签</span>
             </div>
         </div>
@@ -201,6 +208,1079 @@
 
             
             <section id="main">
+    <article id="post-从输入域名到显示网页的整个过程" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/21/从输入域名到显示网页的整个过程/">从输入域名到显示网页的整个过程</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/21/从输入域名到显示网页的整个过程/">
+            <time datetime="2017-07-21T06:59:57.000Z" itemprop="datePublished">2017-07-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/面试题/">面试题</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/web/">web</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>其实普通web应用，实际上就是对http的应用，<a href="http://www.cnblogs.com/li0803/archive/2008/11/03/1324746.html" target="_blank" rel="external">http协议</a>是一种基于TCP协议的网络传输协议</p>
+<p>一个请求</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/21/从输入域名到显示网页的整个过程/" data-id="cj5du7m9w000bm4lxyd5ywmu6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/21/从输入域名到显示网页的整个过程/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/21/从输入域名到显示网页的整个过程/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-正则判断字符串" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/21/正则判断字符串/">正则判断字符串</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/21/正则判断字符串/">
+            <time datetime="2017-07-21T06:37:35.000Z" itemprop="datePublished">2017-07-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/面试题/">面试题</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/java/">java</a>, <a class="tag-link" href="/tags/正则/">正则</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p><strong>由字符串”Tommy%^TANG23@126<em>me”,写一段正则表达式，验证是否符合整串只能包含大小写、数字和“</em> _ ”且长度不能超过15。</strong></p>
+<p>代码</p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/21/正则判断字符串/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/21/正则判断字符串/" data-id="cj5du7ma7000em4lxywqe9fwj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/21/正则判断字符串/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/21/正则判断字符串/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-文件操作" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/21/文件操作/">文件操作</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/21/文件操作/">
+            <time datetime="2017-07-21T05:56:52.000Z" itemprop="datePublished">2017-07-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/面试题/">面试题</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/file/">file</a>, <a class="tag-link" href="/tags/java/">java</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 id="1-在本地生成一个文件（文件内容任意）"><a href="#1-在本地生成一个文件（文件内容任意）" class="headerlink" title="1:在本地生成一个文件（文件内容任意）"></a>1:在本地生成一个文件（文件内容任意）</h2><h2 id="2-copy文件"><a href="#2-copy文件" class="headerlink" title="2:copy文件"></a>2:copy文件</h2><p>代码</p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/21/文件操作/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/21/文件操作/" data-id="cj5du7m9s0009m4lxvo6w2tpf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/21/文件操作/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/21/文件操作/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-说说你了解的设计模式" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/21/说说你了解的设计模式/">说说你了解的设计模式</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/21/说说你了解的设计模式/">
+            <time datetime="2017-07-21T03:56:50.000Z" itemprop="datePublished">2017-07-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/面试题/">面试题</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/设计模式/">设计模式</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p>请查看更多</p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/21/说说你了解的设计模式/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/21/说说你了解的设计模式/" data-id="cj5du7mak000lm4lxi013lza9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/21/说说你了解的设计模式/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/21/说说你了解的设计模式/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-网络编程-客户端如何知道和服务端已断线" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/21/网络编程-客户端如何知道和服务端已断线/">网络编程,客户端如何知道和服务端已断线</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/21/网络编程-客户端如何知道和服务端已断线/">
+            <time datetime="2017-07-21T02:46:19.000Z" itemprop="datePublished">2017-07-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/面试题/">面试题</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/网络编程/">网络编程</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p><strong>告诉服务器,我还活着</strong></p>
+<p>三体二中罗辑为了威慑三体世界,构建了摇篮系统,通过持续对太空发送信号来保持威慑,这其实也是客户端和服务端了</p>
+<p>在客户端定期对服务端发送信息,如果服务端接受不到这个信息,那么说明客户端断线</p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/21/网络编程-客户端如何知道和服务端已断线/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/21/网络编程-客户端如何知道和服务端已断线/" data-id="cj5du7man000mm4lxg8kbzp6j" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/21/网络编程-客户端如何知道和服务端已断线/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/21/网络编程-客户端如何知道和服务端已断线/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-utf-8和unicode的区别" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/21/utf-8和unicode的区别/">utf-8和unicode的区别</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/21/utf-8和unicode的区别/">
+            <time datetime="2017-07-21T02:12:32.000Z" itemprop="datePublished">2017-07-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/面试题/">面试题</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/字符编码/">字符编码</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p>1.什么是Unicode。Unicode的基本目标是统一所有的编码，即它包含所有的字符集。这样只要一个系统支持Unicode，那么，就能处理这些字符集。一般Unicode有两个字节。现在的windows操作系统都是支持Unicode的。</p>
+<p>UTF8 == Unicode Transformation Format – 8 bit  </p>
+<p>2.什么是UTF8呢？UTF8是一种Unicode编码，即它的编码的字符集和Unicode是一致的。但编码的方式不一样。对于英文字符来讲，UTF8的编码和一般的一样，用到一个字节。但对于中文来讲，那么要用三个字节表示。</p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/21/utf-8和unicode的区别/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/21/utf-8和unicode的区别/" data-id="cj5du7m9n0006m4lxr7jr47og" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/21/utf-8和unicode的区别/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/21/utf-8和unicode的区别/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-Centos7下mysql安装" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/20/Centos7下mysql安装/">Centos7下MYSQL安装</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/20/Centos7下mysql安装/">
+            <time datetime="2017-07-20T02:36:36.000Z" itemprop="datePublished">2017-07-20</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/linux/">linux</a>, <a class="tag-link" href="/tags/mysql/">mysql</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 id="准备MYSQL"><a href="#准备MYSQL" class="headerlink" title="准备MYSQL"></a>准备MYSQL</h2><p>mysql数据源下载链接：<a href="http://pan.baidu.com/s/1cIpWaq" target="_blank" rel="external">http://pan.baidu.com/s/1cIpWaq</a> 密码：zxgo</p>
+<h2 id="将mysql上传到服务器上"><a href="#将mysql上传到服务器上" class="headerlink" title="将mysql上传到服务器上"></a>将mysql上传到服务器上</h2><p>SSH工具和FTP工具推荐使用:<a href="https://www.netsarang.com/xshell_download.html" target="_blank" rel="external">XSHELL</a>和<a href="https://www.netsarang.com/products/xfp_overview.html" target="_blank" rel="external">XFTP</a></p>
+<p><img src="http://osluooofp.bkt.clouddn.com/17-7-19/21202150.jpg" alt=""></p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/20/Centos7下mysql安装/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/20/Centos7下mysql安装/" data-id="cj5du7m8o0000m4lx41my9nih" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/20/Centos7下mysql安装/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/20/Centos7下mysql安装/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-Centos7下JDK安装" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/07/19/Centos7下JDK安装/">Centos7下JDK安装</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/07/19/Centos7下JDK安装/">
+            <time datetime="2017-07-19T08:36:36.000Z" itemprop="datePublished">2017-07-19</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/linux/">linux</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/jdk/">jdk</a>, <a class="tag-link" href="/tags/linux/">linux</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h1 id="Centos7下安装JDK"><a href="#Centos7下安装JDK" class="headerlink" title="Centos7下安装JDK"></a>Centos7下安装JDK</h1><h2 id="准备JDK"><a href="#准备JDK" class="headerlink" title="准备JDK"></a>准备JDK</h2><p>JDK下载链接：<a href="http://pan.baidu.com/s/1mhQ2KeG" target="_blank" rel="external">http://pan.baidu.com/s/1mhQ2KeG</a> 密码：7v2w</p>
+<h2 id="将JDK上传到服务器上"><a href="#将JDK上传到服务器上" class="headerlink" title="将JDK上传到服务器上"></a>将JDK上传到服务器上</h2><p>SSH工具和FTP工具推荐使用:<a href="https://www.netsarang.com/xshell_download.html" target="_blank" rel="external">XSHELL</a>和<a href="https://www.netsarang.com/products/xfp_overview.html" target="_blank" rel="external">XFTP</a></p>
+<p><img src="http://osluooofp.bkt.clouddn.com/17-7-19/95386738.jpg" alt=""></p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/19/Centos7下JDK安装/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.itmasir.com/2017/07/19/Centos7下JDK安装/" data-id="cj5du7m8z0001m4lx1uzpu40l" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://www.itmasir.com/2017/07/19/Centos7下JDK安装/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/19/Centos7下JDK安装/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-说明" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -225,6 +1305,11 @@
 
 
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/说明/">说明</a>
+    </div>
+
                         
                     </div>
                 
@@ -233,15 +1318,13 @@
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <hr>
+            <p><hr>
 <h2 id="博客说明"><a href="#博客说明" class="headerlink" title="博客说明"></a>博客说明</h2><p>​    欢迎来到我的博客,我将在这里更新一下小的知识点,以及java方面的知识</p>
 <h2 id="请关注我"><a href="#请关注我" class="headerlink" title="请关注我"></a>请关注我</h2><h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><p>​    <a href="https://github.com/maruilong" target="_blank" rel="external">马睿隆</a></p>
-<h3 id="QQ"><a href="#QQ" class="headerlink" title="QQ"></a>QQ</h3><p>​    774328384</p>
-<h2 id="最近的动态"><a href="#最近的动态" class="headerlink" title="最近的动态"></a>最近的动态</h2><p>​     最近在阅读 java编程思想这本书,同时我的阅读进度和笔记在<a href="https://github.com/maruilong" target="_blank" rel="external">GITHUB</a>上同步更新</p>
-<h3 id="date-2017-07-06-14-48-56"><a href="#date-2017-07-06-14-48-56" class="headerlink" title="date :2017-07-06 14:48:56"></a>date :2017-07-06 14:48:56</h3><p>​    <a href="https://github.com/maruilong/think_in_java-string" target="_blank" rel="external">String对象</a></p>
-<h3 id="date-2017-07-17-21-05-23"><a href="#date-2017-07-17-21-05-23" class="headerlink" title="date :2017-07-17 21:05:23"></a>date :2017-07-17 21:05:23</h3><p>​    <a href="https://github.com/maruilong/think_in_java-typeinfo" target="_blank" rel="external">类型信息</a></p>
-
+<h3 id="QQ"><a href="#QQ" class="headerlink" title="QQ"></a>QQ</h3><p>​    774328384</p></p>
+            <p class="article-more-link">
+                <a href="/2017/07/17/说明/#more">查看更多</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -251,7 +1334,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/17/说明/" data-id="cj586091o000228lxxqz3a3gr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/17/说明/" data-id="cj5du7mab000hm4lx6jghugpr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -353,7 +1436,17 @@
 
 
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/java编程思想/">java编程思想</a>
+    </div>
+
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/String/">String</a>, <a class="tag-link" href="/tags/java编程思想/">java编程思想</a>
+    </div>
+
                     </div>
                 
             </header>
@@ -361,11 +1454,13 @@
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <h1 id="完成think-in-java-String-阅读"><a href="#完成think-in-java-String-阅读" class="headerlink" title="完成think_in_java String 阅读"></a>完成think_in_java String 阅读</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><a href="https://github.com/maruilong/think_in_java-string" target="_blank" rel="external">GITGUB</a></p>
+            <p><h1 id="完成think-in-java-String-阅读"><a href="#完成think-in-java-String-阅读" class="headerlink" title="完成think_in_java String 阅读"></a>完成think_in_java String 阅读</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><a href="https://github.com/maruilong/think_in_java-string" target="_blank" rel="external">GITGUB</a></p>
 <p>完成了第13章对于String的阅读,对于在任何语言中都显得最重要,也是最基础的字符串操作来说</p>
 <p>String本身无疑是很简单的,但是他是编程语言不可缺少的一部分,同时,可以灵活运用的正则给了String无限的可能性</p>
-<h2 id="明天会出两个小的跟String有关的Demo"><a href="#明天会出两个小的跟String有关的Demo" class="headerlink" title="明天会出两个小的跟String有关的Demo"></a>明天会出两个小的跟String有关的Demo</h2><h3 id="1-一个小的爬虫Demo-在网上爬取你想要的数据"><a href="#1-一个小的爬虫Demo-在网上爬取你想要的数据" class="headerlink" title="1:一个小的爬虫Demo,在网上爬取你想要的数据"></a><a href="https://github.com/maruilong/splitDemo.git" target="_blank" rel="external">1:一个小的爬虫Demo,在网上爬取你想要的数据</a></h3><h3 id="2-一个可以通过关键字-在你的整个目录中查找文件的工具-显示具体文件名称和行号"><a href="#2-一个可以通过关键字-在你的整个目录中查找文件的工具-显示具体文件名称和行号" class="headerlink" title="2:一个可以通过关键字,在你的整个目录中查找文件的工具(显示具体文件名称和行号)"></a><a href="https://github.com/maruilong/searchFile" target="_blank" rel="external">2:一个可以通过关键字,在你的整个目录中查找文件的工具(显示具体文件名称和行号)</a></h3><h1 id="明天或者后天正式开始第14章-类型信息的阅读"><a href="#明天或者后天正式开始第14章-类型信息的阅读" class="headerlink" title="明天或者后天正式开始第14章 类型信息的阅读"></a>明天或者后天正式开始第14章 类型信息的阅读</h1>
+<h2 id="明天会出两个小的跟String有关的Demo"><a href="#明天会出两个小的跟String有关的Demo" class="headerlink" title="明天会出两个小的跟String有关的Demo"></a>明天会出两个小的跟String有关的Demo</h2></p>
+            <p class="article-more-link">
+                <a href="/2017/07/07/String阅读完成/#more">查看更多</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -375,7 +1470,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/07/String阅读完成/" data-id="cj586091v000428lxzhe9qfg3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/07/String阅读完成/" data-id="cj5du7m9d0005m4lx600y1h0q" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -453,258 +1548,9 @@
 
 
 
-    <article id="post-七牛云图片测试" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/07/06/七牛云图片测试/">七牛云图片测试</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/07/06/七牛云图片测试/">
-            <time datetime="2017-07-06T08:36:36.000Z" itemprop="datePublished">2017-07-06</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p><img src="http://osluooofp.bkt.clouddn.com/17-7-5/38779107.jpg" alt=""></p>
-<p># </p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://www.itmasir.com/2017/07/06/七牛云图片测试/" data-id="cj586091i000128lx37itqz2n" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://www.itmasir.com/2017/07/06/七牛云图片测试/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/06/七牛云图片测试/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/07/06/hello-world/">Hello World</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/07/06/hello-world/">
-            <time datetime="2017-07-06T08:36:36.000Z" itemprop="datePublished">2017-07-06</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://www.itmasir.com/2017/07/06/hello-world/" data-id="cj586091t000328lxvbmkj12c" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://www.itmasir.com/2017/07/06/hello-world/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.itmasir.com/2017/07/06/hello-world/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
+    <nav id="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+    </nav>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=437250607&auto=1&height=32"></iframe></section>
             
@@ -720,7 +1566,7 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/07/17/说明/" class="thumbnail">
+                            <a href="/2017/07/21/从输入域名到显示网页的整个过程/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -730,16 +1576,16 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/07/17/说明/" class="title">说明</a></p>
-                            <p class="item-date"><time datetime="2017-07-17T06:48:56.000Z" itemprop="datePublished">2017-07-17</time></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/面试题/">面试题</a></p>
+                            <p class="item-title"><a href="/2017/07/21/从输入域名到显示网页的整个过程/" class="title">从输入域名到显示网页的整个过程</a></p>
+                            <p class="item-date"><time datetime="2017-07-21T06:59:57.000Z" itemprop="datePublished">2017-07-21</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/07/07/String阅读完成/" class="thumbnail">
+                            <a href="/2017/07/21/正则判断字符串/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -749,16 +1595,16 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/07/07/String阅读完成/" class="title">String阅读完成</a></p>
-                            <p class="item-date"><time datetime="2017-07-07T14:47:42.000Z" itemprop="datePublished">2017-07-07</time></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/面试题/">面试题</a></p>
+                            <p class="item-title"><a href="/2017/07/21/正则判断字符串/" class="title">正则判断字符串</a></p>
+                            <p class="item-date"><time datetime="2017-07-21T06:37:35.000Z" itemprop="datePublished">2017-07-21</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/07/06/七牛云图片测试/" class="thumbnail">
+                            <a href="/2017/07/21/文件操作/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -768,16 +1614,16 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/07/06/七牛云图片测试/" class="title">七牛云图片测试</a></p>
-                            <p class="item-date"><time datetime="2017-07-06T08:36:36.000Z" itemprop="datePublished">2017-07-06</time></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/面试题/">面试题</a></p>
+                            <p class="item-title"><a href="/2017/07/21/文件操作/" class="title">文件操作</a></p>
+                            <p class="item-date"><time datetime="2017-07-21T05:56:52.000Z" itemprop="datePublished">2017-07-21</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/07/06/hello-world/" class="thumbnail">
+                            <a href="/2017/07/21/说说你了解的设计模式/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -787,9 +1633,28 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/07/06/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2017-07-06T08:36:36.000Z" itemprop="datePublished">2017-07-06</time></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/面试题/">面试题</a></p>
+                            <p class="item-title"><a href="/2017/07/21/说说你了解的设计模式/" class="title">说说你了解的设计模式</a></p>
+                            <p class="item-date"><time datetime="2017-07-21T03:56:50.000Z" itemprop="datePublished">2017-07-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/07/21/网络编程-客户端如何知道和服务端已断线/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/面试题/">面试题</a></p>
+                            <p class="item-title"><a href="/2017/07/21/网络编程-客户端如何知道和服务端已断线/" class="title">网络编程,客户端如何知道和服务端已断线</a></p>
+                            <p class="item-date"><time datetime="2017-07-21T02:46:19.000Z" itemprop="datePublished">2017-07-21</time></p>
                         </div>
                     </li>
                 
@@ -799,19 +1664,40 @@
 
     
         
-    
-        
     <div class="widget-wrap">
-        <h3 class="widget-title">归档</h3>
+        <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/java编程思想/">java编程思想</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/说明/">说明</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/面试题/">面试题</a><span class="category-list-count">6</span></li></ul>
         </div>
     </div>
 
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">11</span></li></ul>
+        </div>
+    </div>
+
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/String/">String</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/file/">file</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java编程思想/">java编程思想</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jdk/">jdk</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/字符编码/">字符编码</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则/">正则</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网络编程/">网络编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/String/" style="font-size: 10px;">String</a> <a href="/tags/file/" style="font-size: 10px;">file</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/java编程思想/" style="font-size: 10px;">java编程思想</a> <a href="/tags/jdk/" style="font-size: 10px;">jdk</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/字符编码/" style="font-size: 10px;">字符编码</a> <a href="/tags/正则/" style="font-size: 10px;">正则</a> <a href="/tags/网络编程/" style="font-size: 10px;">网络编程</a> <a href="/tags/设计模式/" style="font-size: 10px;">设计模式</a>
+        </div>
+    </div>
+
     
         
     <div class="widget-wrap widget-list">
@@ -821,6 +1707,10 @@
                 
                     <li>
                         <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.itliusir.com">君君的博客</a>
                     </li>
                 
             </ul>
@@ -839,6 +1729,11 @@
         <div id="footer-info" class="inner">
             &copy; 2017 马睿隆<br>
             使用 <a href="http://hexo.io/" target="_blank">Hexo</a> 构建. 主题来自 <a href="http://github.com/ppoffice">PPOffice</a>
+            <br />
+            <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv" style="color: #009688; font-weight: bold; font-size: 1.3em;"></span>次</span>
+
+            访客数 <span id="busuanzi_value_site_uv" style="color: #009688; font-weight: bold; font-size: 1.3em;"></span> 人次
         </div>
     </div>
 </footer>
