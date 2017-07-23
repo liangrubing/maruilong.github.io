@@ -251,8 +251,149 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>其实普通web应用，实际上就是对http的应用，<a href="http://www.cnblogs.com/li0803/archive/2008/11/03/1324746.html" target="_blank" rel="external">http协议</a>是一种基于TCP协议的网络传输协议</p>
-<p>一个请求</p>
+            <p>作为一个软件开发者，你一定会对网络应用如何工作有一个完整的层次化的认知，同样这里也包括这些应用所用到的技术：像浏览器，HTTP，HTML，网络<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>，需求处理等等。</p>
+<p>本文将更深入的研究当你输入一个网址的时候，后台到底发生了一件件什么样的事～</p>
+<ol>
+<li>首先嘛，你得在浏览器里输入要网址:</li>
+</ol>
+<p><img src="http://www.chinahtml.com/d/file//2010/07-12/image4.png" alt="img"></p>
+<ol>
+<li>浏览器查找域名的IP地址</li>
+</ol>
+<p><img src="http://www.chinahtml.com/d/file//2010/07-12/image13.png" alt="img"></p>
+<p>导航的第一步是通过访问的域名找出其IP地址。DNS查找过程如下：</p>
+<ul>
+<li><p>浏览器缓存 – 浏览器会缓存DNS记录一段时间。 有趣的是，操作系统没有告诉浏览器储存DNS记录的时间，这样不同浏览器会储存个自固定的一个时间（2分钟到30分钟不等）。</p>
+</li>
+<li><p>系统缓存 – 如果在浏览器缓存里没有找到需要的记录，浏览器会做一个系统调用（windows里是gethostbyname）。这样便可获得系统缓存中的记录。</p>
+</li>
+<li><p>路由器缓存 – 接着，前面的查询请求发向路由器，它一般会有自己的DNS缓存。</p>
+</li>
+<li><p>ISP DNS 缓存 – 接下来要check的就是ISP缓存DNS的<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>。在这一般都能找到相应的缓存记录。</p>
+</li>
+<li><p>递归搜索 – 你的ISP的DNS<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>从跟域名<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>开始进行递归搜索，从.com顶级域名<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>到Facebook的域名<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>。一般DNS<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>的缓存中会 有.com域名<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>中的域名，所以到顶级<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>的匹配过程不是那么必要了。</p>
+</li>
+</ul>
+<p>DNS递归查找如下图所示：</p>
+<p><img src="http://www.itmian4.com/data/attachment/forum/201211/24/195301kyzq6h6mvpe7wkqt.png" alt="img"></p>
+<p>DNS有一点令人担忧，这就是像wikipedia.org 或者 facebook.com这样的整个域名看上去只是对应一个单独的IP地址。还好，有几种方法可以消除这个瓶颈：</p>
+<ul>
+<li><p>循环 DNS 是DNS查找时返回多个IP时的解决方案。举例来说，Facebook.com实际上就对应了四个IP地址。</p>
+</li>
+<li><p>负载平衡器 是以一个特定IP地址进行侦听并将网络请求转发到集群<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>上的硬件设备。 一些大型的站点一般都会使用这种昂贵的高性能负载平衡器。</p>
+</li>
+<li><p>地理 DNS 根据用户所处的地理位置，通过把域名映射到多个不同的IP地址提高可扩展性。这样不同的<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>不能够更新同步状态，但映射静态内容的话非常好。</p>
+</li>
+<li><p>Anycast 是一个IP地址映射多个物理主机的路由技术。 美中不足，Anycast与TCP协议适应的不是很好，所以很少应用在那些方案中。</p>
+</li>
+</ul>
+<p>大多数DNS<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>使用Anycast来获得高效低延迟的DNS查找。</p>
+<ol>
+<li>浏览器给<a href="http://www.iwanna.cn/tags/web/" target="_blank" rel="external">web</a><a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>发送一个HTTP请求</li>
+</ol>
+<p><img src="http://www.chinahtml.com/d/file//2010/07-12/image22.png" alt="img"></p>
+<p>因为像Facebook主页这样的动态页面，打开后在浏览器缓存中很快甚至马上就会过期，毫无疑问他们不能从中读取。</p>
+<p>所以，浏览器将把一下请求发送到Facebook所在的<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>：</p>
+<p>GET <a href="HTTP://facebook.com/" target="_blank" rel="external">HTTP://facebook.com/</a> HTTP/1.1</p>
+<p>Accept: application/x-ms-application, image/jpeg, application/xaml+xml, […]</p>
+<p>User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; […]</p>
+<p>Accept-Encoding: gzip, deflate</p>
+<p>Connection: Keep-Alive</p>
+<p>Host: facebook.com</p>
+<p>Cookie: datr=1265876274-[…]; locale=en_US; lsd=WW[…]; c_user=2101[…]</p>
+<p>GET 这个请求定义了要读取的URL： “<a href="HTTP://facebook.com/" target="_blank" rel="external">HTTP://facebook.com/</a>”。 浏览器自身定义 (User-Agent 头)， 和它希望接受什么类型的相应 (Accept and Accept-Encoding 头). Connection头要求<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>为了后边的请求不要关闭TCP连接。</p>
+<p>请求中也包含浏览器存储的该域名的cookies。可能你已经知道，在不同页面请求当中，cookies是与跟踪一个<a href="http://www.chinahtml.com/" target="_blank" rel="external">网站</a>状态相匹配的键值。这样cookies会存储登录用户名，<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>分配的密码和一些用户设置等。Cookies会以文本文档形式存储在客户机里，每次请求时发送给<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>。</p>
+<p>用来看原始HTTP请求及其相应的工具很多。作者比较喜欢使用fiddler，当然也有像FireBug这样其他的工具。这些软件在<a href="http://www.chinahtml.com/" target="_blank" rel="external">网站</a>优 化时会帮上很大忙。</p>
+<p>除了获取请求，还有一种是发送请求，它常在提交表单用到。发送请求通过URL传递其参数(e.g.: <a href="HTTP://robozzle.com/puzzle.aspx?id=85" target="_blank" rel="external">HTTP://robozzle.com/puzzle.aspx?id=85</a>)。发送请求在请求正文头之后发送其参数。</p>
+<p>像“<a href="HTTP://facebook.com/" target="_blank" rel="external">HTTP://facebook.com/</a>”中的斜杠是至关重要的。这种情况下，浏览器能安全的添加斜杠。而像“HTTP:</p>
+<p>//example.com/folderOrFile”这样的地址，因为浏览器不清楚folderOrFile到底是文件夹还是文件，所以不能自动添加<br> 斜杠。这时，浏览器就不加斜杠直接访问地址，<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>会响应一个重定向，结果造成一次不必要的握手。</p>
+<ol>
+<li>facebook服务的永久重定向响应</li>
+</ol>
+<p><img src="http://www.chinahtml.com/d/file//2010/07-12/image8.png" alt="img"></p>
+<p>图中所示为Facebook<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>发回给浏览器的响应：</p>
+<p>HTTP/1.1 301 Moved Permanently</p>
+<p>Cache-Control: private, no-store, no-cache, must-revalidate, post-check=0,</p>
+<p>pre-check=0</p>
+<p>Expires: Sat, 01 Jan 2000 00:00:00 GMT</p>
+<p>Location: <a href="HTTP://www.facebook.com/" target="_blank" rel="external">HTTP://www.facebook.com/</a></p>
+<p>P3P: CP=”DSP LAW”</p>
+<p>Pragma: no-cache</p>
+<p>Set-Cookie: made_write_conn=deleted; expires=Thu, 12-Feb-2009 05:09:50 GMT;</p>
+<p>path=/; domain=.facebook.com; httponly</p>
+<p>Content-Type: text/html; charset=utf-8</p>
+<p>X-Cnection: close</p>
+<p>Date: Fri, 12 Feb 2010 05:09:51 GMT</p>
+<p>Content-Length: 0</p>
+<p><a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>给浏览器响应一个301永久重定向响应，这样浏览器就会访问“<a href="HTTP://www.facebook.com/" target="_blank" rel="external">HTTP://www.facebook.com/</a>” 而非“<a href="HTTP://facebook.com/" target="_blank" rel="external">HTTP://facebook.com/</a>”。</p>
+<p>为什么<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>一定要重定向而不是直接发会用户想看的网页内容呢？这个问题有好多有意思的答案。</p>
+<p>其中一个原因跟搜索引擎排名有 关。你看，如果一个页面有两个地址，就像<a href="HTTP://www.igoro.com/" target="_blank" rel="external">HTTP://www.igoro.com/</a> 和<a href="HTTP://igoro.com/" target="_blank" rel="external">HTTP://igoro.com/</a>，搜索引擎会认为它们是两个<a href="http://www.chinahtml.com/" target="_blank" rel="external">网站</a>，结果造成每一个的搜索链接都减少从而降低排名。而搜索引擎知道301永久重定向是 什么意思，这样就会把访问带www的和不带www的地址归到同一个<a href="http://www.chinahtml.com/" target="_blank" rel="external">网站</a>排名下。</p>
+<p>还有一个是用不同的地址会造成缓存友好性变差。当一个页面有好几个名字时，它可能会在缓存里出现好几次。</p>
+<ol>
+<li>浏览器跟踪重定向地址</li>
+</ol>
+<p><img src="http://www.chinahtml.com/d/file//2010/07-12/image23.png" alt="img"></p>
+<p>现在，浏览器知道了 “<a href="HTTP://www.facebook.com/" target="_blank" rel="external">HTTP://www.facebook.com/</a>”才是要访问的正确地址，所以它会发送另一个获取请求：</p>
+<p>GET <a href="HTTP://www.facebook.com/" target="_blank" rel="external">HTTP://www.facebook.com/</a> HTTP/1.1</p>
+<p>Accept: application/x-ms-application, image/jpeg, application/xaml+xml, […]</p>
+<p>Accept-Language: en-US</p>
+<p>User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; […]</p>
+<p>Accept-Encoding: gzip, deflate</p>
+<p>Connection: Keep-Alive</p>
+<p>Cookie: lsd=XW[…]; c_user=21[…]; x-referer=[…]</p>
+<p>Host: <a href="http://www.facebook.com" target="_blank" rel="external">www.facebook.com</a></p>
+<p>头信息以之前请求中的意义相同。</p>
+<ol>
+<li>服务器“处理”请求</li>
+</ol>
+<p>服务器接收到获取请求，然后处理并返回一个响应。</p>
+<p>这表面上看起来是一个顺向的任务，但其实这中间发生了很多有意思的东西- 就像作者博客这样简单的网站，何况像facebook那样访问量大的网站呢！</p>
+<ul>
+<li>Web 服务器软件web服务器软件（像IIS和阿帕奇）接收到HTTP请求，然后确定执行什么请求处理来处理它。请求处理就 是一个能够读懂请求并且能生成HTML来进行响应的程序（像ASP.NET,PHP,RUBY…）。</li>
+</ul>
+<p>举 个最简单的例子，需求处理可以以映射网站地址结构的文件层次存储。像<a href="HTTP://example.com/folder1/page1.aspx" target="_blank" rel="external">HTTP://example.com/folder1/page1.aspx</a>这个地 址会映射/httpdocs/folder1/page1.aspx这个文件。web服务器软件可以设置成为地址人工的对应请求处理，这样 page1.aspx的发布地址就可以是<a href="HTTP://example.com/folder1/page1" target="_blank" rel="external">HTTP://example.com/folder1/page1</a>。* 请求处理请求处理阅读 请求及它的参数和cookies。它会读取也可能更新一些数据，并讲数据存储在服务器上。然后，需求处理会生成一个HTML响应。</p>
+<p>所 有动态网站都面临一个有意思的难点<br>-如何存储数据。小网站一半都会有一个SQL数据库来存储数据，存储大量数据和/或访问量大的网站不得不找一些办法把数据库分配到多台机器上。解决方案有：sharding<br> （基于主键值讲数据表分散到多个数据库中），复制，利用弱语义一致性的简化数据库。</p>
+<p>委托工作给批处理是一个廉价保持数据更新的技术。举例来讲，Fackbook得及时更新新闻feed，但数据支持下的“你可能认识的人”功能只需要每晚更新（作者猜测是这样的，改功能如何完善不得而知）。批处理作业更新会导致一些不太重要的数据陈旧，但能使数据更新耕作更快更简洁。7. 服务器发回一个HTML响应</p>
+<p>图中为服务器生成并返回的响应：</p>
+<p>HTTP/1.1 200 OKCache-Control: private, no-store, no-cache, must-revalidate, post-check=0,pre-check=0Expires: Sat, 01 Jan 2000 00:00:00 GMTP3P: CP=”DSP LAW”Pragma: no-cacheContent-Encoding: gzipContent-Type: text/html; charset=utf-8X-Cnection: closeTransfer-Encoding: chunkedDate: Fri, 12 Feb 2010 09:05:55 GMT</p>
+<p>2b3Tn@[…]</p>
+<p>整个响应大小为35kB，其中大部分在整理后以blob类型传输。</p>
+<p>内容编码头告诉浏览器整个响应体用 gzip算法进行压缩。解压blob块后，你可以看到如下期望的HTML：</p>
+<p>“<a href="HTTP://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" target="_blank" rel="external">HTTP://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd</a>”&gt;lang=”en” id=”facebook”&gt;</p>
+<p>…</p>
+<p>关于压缩，头信息说明了是否缓存这个页面，如果缓存的话如何去做，有什么cookies要去设置（前面这个响应里没有这点）和隐私信息等 等。</p>
+<p>请注意报头中把Content-type设置为“text/html”。报头让浏览器将该响应内容以HTML形式呈现，而不是以文件形式下 载它。浏览器会根据报头信息决定如何解释该响应，不过同时也会考虑像URL扩展内容等其他因素。8. 浏览器开始显示HTML</p>
+<p>在浏览器没有完整接受全部HTML文档时，它就已经开始显示这个页面了：</p>
+<ol>
+<li>浏览器发送获取嵌入在HTML中的对象</li>
+</ol>
+<p>在浏览器显示HTML时，它会注意到需要获取其他地址内容的标签。这时，浏览器会发送一个获取请求来重新获得这些文件。</p>
+<p>下面是几个我们访问facebook.com时需要重获取的几个URL：</p>
+<ul>
+<li>图片</li>
+</ul>
+<p>HTTP://static.ak.fbcdn.net/rsrc.php/z12E0/hash/8q2anwu7.gif</p>
+<p>HTTP://static.ak.fbcdn.net/rsrc.php/zBS5C/hash/7hwy7at6.gif</p>
+<p>…* CSS 式样表</p>
+<p>HTTP://static.ak.fbcdn.net/rsrc.php/z448Z/hash/2plh8s4n.css</p>
+<p>HTTP://static.ak.fbcdn.net/rsrc.php/zANE1/hash/cvtutcee.css</p>
+<p>…* JavaScript 文件</p>
+<p>HTTP://static.ak.fbcdn.net/rsrc.php/zEMOA/hash/c8yzb6ub.js</p>
+<p>HTTP://static.ak.fbcdn.net/rsrc.php/z6R9L/hash/cq2lgbs8.js</p>
+<p>…</p>
+<p>这些地址都要经历一个和HTML读取类似的过程。所以浏览器会在DNS中查找这些域名，发送请求，重定向等等…</p>
+<p>但不像动态页面那样，静态文件会允许浏览器对其进行缓存。有的文件可能会不需要与服务器通讯，而从缓存中直接读取。服务器的响应中包含了静态文件保存的期限信息，所以浏览器知道要把它们缓存多长时间。还有，每个响应都可能包含像版本号一样工作的ETag头（被请求变量的实体值），如果浏览器观察到文件的版本<br> ETag信息已经存在，就马上停止这个文件的传输。</p>
+<p>试着猜猜看“fbcdn.net”在地址中代表什么？聪明的答案是”Facebook内容分发网络”。Facebook利用内容分发网络 （CDN）分发像图片，CSS表和 JavaScript文件这些静态文件。所以，这些文件会在全球很多CDN的数据中心中留下备份。</p>
+<p>静态内容往往代表站点的带宽大小，也能通过CDN轻松的复制。通常网站会使用第三方的CDN。例如，Facebook的静态文件由最大的 CDN提供商Akamai来托管。</p>
+<p>举例来讲，当你试着ping static.ak.fbcdn.net的时候，可能会从某个akamai.net服务器上获得响应。有意思的是，当你同样再ping一次的时候，响应的 服务器可能就不一样，这说明幕后的负载平衡开始起作用了。10. 浏览器发送异步（AJAX）请求</p>
+<p>在Web 2.0伟大精神的指引下，页面显示完成后客户端仍与服务器端保持着联系。</p>
+<p>以<br>Facebook聊天功能为例，它会持续与服务器保持联系来及时更新你那些亮亮灰灰的好友状态。为了更新这些头像亮着的好友状态，在浏览器中执行的<br>JavaScript代码会给服务器发送异步请求。这个异步请求发送给特定的地址，它是一个按照程式构造的获取或发送请求。还是在Facebook这个例子中，客户端发送给<a href="HTTP://www.facebook.com/ajax/chat/buddy_list.php" target="_blank" rel="external">HTTP://www.facebook.com/ajax/chat/buddy_list.php</a>一个发布请求来获取你好友里哪个 在线的状态信息。</p>
+<p>提起这个模式，就必须要讲讲”AJAX”– “异步JavaScript 和 XML”，虽然服务器为什么用XML格式来进行响应也没有个一清二白的原因。再举个例子吧，对于异步请求，Facebook会返回一些 JavaScript的代码片段。</p>
+<p>除了其他，fiddler这个工具能够让你看到浏览器发送的异步请求。事实上，你不仅可以被动的做为这些请求的看客，还能主动出击修改和重 新发送它们。AJAX请求这么容易被蒙，可着实让那些计分的在线游戏开发者们郁闷的了。（当然，可别那样骗人家~）</p>
+<p>Facebook聊天功能提供了关于AJAX一个有意思的问题案例：把数据从服务器端推送到客户端。因为HTTP是一个请求-响应协议，所 以聊天服务器不能把新消息发给客户。取而代之的是客户端不得不隔几秒就轮询下服务器端看自己有没有新消息。</p>
+<p>这些情况发生时长轮询是个减轻服务器负载挺有趣的技术。如果当被轮询时服务器没有新消息，它就不理这个客户端。而当尚未超时的情况下收到了 该客户的新消息，服务器就会找到未完成的请求，把新消息做为响应返回给客户端。总结一下</p>
+<p>希望看了本文，你能明白不同的网络模块是如何协同工作的</p>
+<p>来源:<a href="http://www.itmian4.com/forum.php?mod=viewthread&amp;tid=1655&amp;fromuid=1931" target="_blank" rel="external">http://www.itmian4.com/forum.php?mod=viewthread&amp;tid=1655&amp;fromuid=1931</a></p>
 
         
         </div>
@@ -263,7 +404,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/21/从输入域名到显示网页的整个过程/" data-id="cj5du7m9w000bm4lxyd5ywmu6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/21/从输入域名到显示网页的整个过程/" data-id="cj5g3s9bt0001tolxdp3xg1ei" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -397,7 +538,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/21/正则判断字符串/" data-id="cj5du7ma7000em4lxywqe9fwj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/21/正则判断字符串/" data-id="cj5g3s9c90006tolxfe8va5sr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -530,7 +671,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/21/文件操作/" data-id="cj5du7m9s0009m4lxvo6w2tpf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/21/文件操作/" data-id="cj5g3s9c20005tolxt25fxqk3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -663,7 +804,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/21/说说你了解的设计模式/" data-id="cj5du7mak000lm4lxi013lza9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/21/说说你了解的设计模式/" data-id="cj5g3s9cp000gtolxpjzx1e19" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -798,7 +939,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/21/网络编程-客户端如何知道和服务端已断线/" data-id="cj5du7man000mm4lxg8kbzp6j" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/21/网络编程-客户端如何知道和服务端已断线/" data-id="cj5g3s9ce000btolxr022rq9a" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -933,7 +1074,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/21/utf-8和unicode的区别/" data-id="cj5du7m9n0006m4lxr7jr47og" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/21/utf-8和unicode的区别/" data-id="cj5g3s9cy000otolxxmftcfnx" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1068,7 +1209,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/20/Centos7下mysql安装/" data-id="cj5du7m8o0000m4lx41my9nih" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/20/Centos7下mysql安装/" data-id="cj5g3s9bz0004tolxphu0dkd3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1203,7 +1344,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/19/Centos7下JDK安装/" data-id="cj5du7m8z0001m4lx1uzpu40l" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/19/Centos7下JDK安装/" data-id="cj5g3s9cb0009tolxyt3ewmyq" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1334,7 +1475,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/17/说明/" data-id="cj5du7mab000hm4lx6jghugpr" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/17/说明/" data-id="cj5g3s9cn000etolxdng9jmg2" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1470,7 +1611,7 @@
 
 </div>
 
-    <a data-url="http://www.itmasir.com/2017/07/07/String阅读完成/" data-id="cj5du7m9d0005m4lx600y1h0q" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://www.itmasir.com/2017/07/07/String阅读完成/" data-id="cj5g3s9bn0000tolxx779vjuq" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
