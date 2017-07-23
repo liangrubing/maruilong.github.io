@@ -3,10 +3,53 @@
   
     
     <entry>
+      <title><![CDATA[token是什么]]></title>
+      <url>/2017/07/23/token%E6%98%AF%E4%BB%80%E4%B9%88/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> token </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> token </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[后端token的实现和验证]]></title>
+      <url>/2017/07/23/%E5%90%8E%E7%AB%AFtoken%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%92%8C%E9%AA%8C%E8%AF%81/</url>
+      <content type="html"><![CDATA[<h2 id="token试什么"><a href="#token试什么" class="headerlink" title="token试什么"></a><a href="">token试什么</a></h2>]]></content>
+      
+        <categories>
+            
+            <category> 面试题 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> token </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[从输入域名到显示网页的整个过程]]></title>
       <url>/2017/07/21/%E4%BB%8E%E8%BE%93%E5%85%A5%E5%9F%9F%E5%90%8D%E5%88%B0%E6%98%BE%E7%A4%BA%E7%BD%91%E9%A1%B5%E7%9A%84%E6%95%B4%E4%B8%AA%E8%BF%87%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p>作为一个软件开发者，你一定会对网络应用如何工作有一个完整的层次化的认知，同样这里也包括这些应用所用到的技术：像浏览器，HTTP，HTML，网络<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>，需求处理等等。</p>
 <p>本文将更深入的研究当你输入一个网址的时候，后台到底发生了一件件什么样的事～</p>
+<a id="more"></a>
 <ol>
 <li>首先嘛，你得在浏览器里输入要网址:</li>
 </ol>

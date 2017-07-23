@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.itmasir.com/"/>
-  <updated>2017-07-23T02:26:53.891Z</updated>
+  <updated>2017-07-23T05:07:24.330Z</updated>
   <id>http://www.itmasir.com/</id>
   
   <author>
@@ -16,14 +16,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>token是什么</title>
+    <link href="http://www.itmasir.com/2017/07/23/token%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+    <id>http://www.itmasir.com/2017/07/23/token是什么/</id>
+    <published>2017-07-23T05:05:54.000Z</published>
+    <updated>2017-07-23T05:07:24.330Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="token" scheme="http://www.itmasir.com/categories/token/"/>
+    
+    
+      <category term="token" scheme="http://www.itmasir.com/tags/token/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>后端token的实现和验证</title>
+    <link href="http://www.itmasir.com/2017/07/23/%E5%90%8E%E7%AB%AFtoken%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%92%8C%E9%AA%8C%E8%AF%81/"/>
+    <id>http://www.itmasir.com/2017/07/23/后端token的实现和验证/</id>
+    <published>2017-07-23T04:56:13.000Z</published>
+    <updated>2017-07-23T05:05:30.874Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="token试什么"><a href="#token试什么" class="headerlink" title="token试什么"></a><a href="">token试什么</a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;token试什么&quot;&gt;&lt;a href=&quot;#token试什么&quot; class=&quot;headerlink&quot; title=&quot;token试什么&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;token试什么&lt;/a&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="http://www.itmasir.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="token" scheme="http://www.itmasir.com/tags/token/"/>
+    
+      <category term="java" scheme="http://www.itmasir.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>从输入域名到显示网页的整个过程</title>
     <link href="http://www.itmasir.com/2017/07/21/%E4%BB%8E%E8%BE%93%E5%85%A5%E5%9F%9F%E5%90%8D%E5%88%B0%E6%98%BE%E7%A4%BA%E7%BD%91%E9%A1%B5%E7%9A%84%E6%95%B4%E4%B8%AA%E8%BF%87%E7%A8%8B/"/>
     <id>http://www.itmasir.com/2017/07/21/从输入域名到显示网页的整个过程/</id>
     <published>2017-07-21T06:59:57.000Z</published>
-    <updated>2017-07-23T02:26:53.891Z</updated>
+    <updated>2017-07-23T05:13:26.300Z</updated>
     
     <content type="html"><![CDATA[<p>作为一个软件开发者，你一定会对网络应用如何工作有一个完整的层次化的认知，同样这里也包括这些应用所用到的技术：像浏览器，HTTP，HTML，网络<a href="http://www.chinahtml.com/server" target="_blank" rel="external">服务器</a>，需求处理等等。</p>
 <p>本文将更深入的研究当你输入一个网址的时候，后台到底发生了一件件什么样的事～</p>
+<a id="more"></a>
 <ol>
 <li>首先嘛，你得在浏览器里输入要网址:</li>
 </ol>
@@ -169,7 +212,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;作为一个软件开发者，你一定会对网络应用如何工作有一个完整的层次化的认知，同样这里也包括这些应用所用到的技术：像浏览器，HTTP，HTML，网络&lt;a href=&quot;http://www.chinahtml.com/server&quot; target=&quot;_blank&quot; rel=&quot;ext
+      &lt;p&gt;作为一个软件开发者，你一定会对网络应用如何工作有一个完整的层次化的认知，同样这里也包括这些应用所用到的技术：像浏览器，HTTP，HTML，网络&lt;a href=&quot;http://www.chinahtml.com/server&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;服务器&lt;/a&gt;，需求处理等等。&lt;/p&gt;
+&lt;p&gt;本文将更深入的研究当你输入一个网址的时候，后台到底发生了一件件什么样的事～&lt;/p&gt;
     
     </summary>
     
