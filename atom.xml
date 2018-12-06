@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.itmasir.com/"/>
-  <updated>2017-07-23T05:07:24.330Z</updated>
+  <updated>2017-08-07T13:34:42.251Z</updated>
   <id>http://www.itmasir.com/</id>
   
   <author>
@@ -16,44 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>token是什么</title>
-    <link href="http://www.itmasir.com/2017/07/23/token%E6%98%AF%E4%BB%80%E4%B9%88/"/>
-    <id>http://www.itmasir.com/2017/07/23/token是什么/</id>
-    <published>2017-07-23T05:05:54.000Z</published>
-    <updated>2017-07-23T05:07:24.330Z</updated>
+    <title>说明</title>
+    <link href="http://www.itmasir.com/2017/08/03/%E8%AF%B4%E6%98%8E/"/>
+    <id>http://www.itmasir.com/2017/08/03/说明/</id>
+    <published>2017-08-03T15:17:00.000Z</published>
+    <updated>2017-08-07T13:34:42.251Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="博客说明"><a href="#博客说明" class="headerlink" title="博客说明"></a>博客说明</h2><p>​    欢迎来到我的博客,我将在这里更新一下小的知识点,以及java方面的知识</p>
+<h2 id="请关注我"><a href="#请关注我" class="headerlink" title="请关注我"></a>请关注我</h2><h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><p>​    <a href="https://github.com/maruilong" target="_blank" rel="external">马睿隆</a></p>
+<h3 id="QQ"><a href="#QQ" class="headerlink" title="QQ"></a>QQ</h3><p>​    774328384</p>
+<a id="more"></a>
+<h2 id="最近的动态"><a href="#最近的动态" class="headerlink" title="最近的动态"></a>最近的动态</h2><p>​     最近在阅读 java编程思想这本书,同时我的阅读进度和笔记在<a href="https://github.com/maruilong" target="_blank" rel="external">GITHUB</a>上同步更新</p>
+<h3 id="date-2017-07-06-14-48-56"><a href="#date-2017-07-06-14-48-56" class="headerlink" title="date :2017-07-06 14:48:56"></a>date :2017-07-06 14:48:56</h3><p>​    <a href="https://github.com/maruilong/think_in_java-string" target="_blank" rel="external">String对象</a></p>
+<h3 id="date-2017-07-17-21-05-23"><a href="#date-2017-07-17-21-05-23" class="headerlink" title="date :2017-07-17 21:05:23"></a>date :2017-07-17 21:05:23</h3><p>​    <a href="https://github.com/maruilong/think_in_java-typeinfo" target="_blank" rel="external">类型信息</a></p>
+<p>data:2017-08-03 23:17:00 完成类型信息阅读</p>
+]]></content>
     
     <summary type="html">
     
-    </summary>
-    
-      <category term="token" scheme="http://www.itmasir.com/categories/token/"/>
-    
-    
-      <category term="token" scheme="http://www.itmasir.com/tags/token/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>后端token的实现和验证</title>
-    <link href="http://www.itmasir.com/2017/07/23/%E5%90%8E%E7%AB%AFtoken%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%92%8C%E9%AA%8C%E8%AF%81/"/>
-    <id>http://www.itmasir.com/2017/07/23/后端token的实现和验证/</id>
-    <published>2017-07-23T04:56:13.000Z</published>
-    <updated>2017-07-23T05:05:30.874Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="token试什么"><a href="#token试什么" class="headerlink" title="token试什么"></a><a href="">token试什么</a></h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;token试什么&quot;&gt;&lt;a href=&quot;#token试什么&quot; class=&quot;headerlink&quot; title=&quot;token试什么&quot;&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;token试什么&lt;/a&gt;&lt;/h2&gt;
+      &lt;hr&gt;
+&lt;h2 id=&quot;博客说明&quot;&gt;&lt;a href=&quot;#博客说明&quot; class=&quot;headerlink&quot; title=&quot;博客说明&quot;&gt;&lt;/a&gt;博客说明&lt;/h2&gt;&lt;p&gt;​    欢迎来到我的博客,我将在这里更新一下小的知识点,以及java方面的知识&lt;/p&gt;
+&lt;h2 id=&quot;请关注我&quot;&gt;&lt;a href=&quot;#请关注我&quot; class=&quot;headerlink&quot; title=&quot;请关注我&quot;&gt;&lt;/a&gt;请关注我&lt;/h2&gt;&lt;h3 id=&quot;GITHUB&quot;&gt;&lt;a href=&quot;#GITHUB&quot; class=&quot;headerlink&quot; title=&quot;GITHUB&quot;&gt;&lt;/a&gt;GITHUB&lt;/h3&gt;&lt;p&gt;​    &lt;a href=&quot;https://github.com/maruilong&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;马睿隆&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;QQ&quot;&gt;&lt;a href=&quot;#QQ&quot; class=&quot;headerlink&quot; title=&quot;QQ&quot;&gt;&lt;/a&gt;QQ&lt;/h3&gt;&lt;p&gt;​    774328384&lt;/p&gt;
     
     </summary>
     
-      <category term="面试题" scheme="http://www.itmasir.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+      <category term="说明" scheme="http://www.itmasir.com/categories/%E8%AF%B4%E6%98%8E/"/>
     
-    
-      <category term="token" scheme="http://www.itmasir.com/tags/token/"/>
-    
-      <category term="java" scheme="http://www.itmasir.com/tags/java/"/>
     
   </entry>
   
@@ -258,7 +248,7 @@
     <link href="http://www.itmasir.com/2017/07/21/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/"/>
     <id>http://www.itmasir.com/2017/07/21/文件操作/</id>
     <published>2017-07-21T05:56:52.000Z</published>
-    <updated>2017-07-21T12:23:36.882Z</updated>
+    <updated>2017-07-21T12:23:36.883Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-在本地生成一个文件（文件内容任意）"><a href="#1-在本地生成一个文件（文件内容任意）" class="headerlink" title="1:在本地生成一个文件（文件内容任意）"></a>1:在本地生成一个文件（文件内容任意）</h2><h2 id="2-copy文件"><a href="#2-copy文件" class="headerlink" title="2:copy文件"></a>2:copy文件</h2><p>代码</p>
 <a id="more"></a>
@@ -312,7 +302,7 @@
     <link href="http://www.itmasir.com/2017/07/21/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E5%92%8C%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%B7%B2%E6%96%AD%E7%BA%BF/"/>
     <id>http://www.itmasir.com/2017/07/21/网络编程-客户端如何知道和服务端已断线/</id>
     <published>2017-07-21T02:46:19.000Z</published>
-    <updated>2017-07-21T12:23:36.883Z</updated>
+    <updated>2017-07-21T12:23:36.884Z</updated>
     
     <content type="html"><![CDATA[<p><strong>告诉服务器,我还活着</strong></p>
 <p>三体二中罗辑为了威慑三体世界,构建了摇篮系统,通过持续对太空发送信号来保持威慑,这其实也是客户端和服务端了</p>
@@ -454,7 +444,7 @@
     <link href="http://www.itmasir.com/2017/07/19/Centos7%E4%B8%8BJDK%E5%AE%89%E8%A3%85/"/>
     <id>http://www.itmasir.com/2017/07/19/Centos7下JDK安装/</id>
     <published>2017-07-19T08:36:36.000Z</published>
-    <updated>2017-07-21T12:23:36.879Z</updated>
+    <updated>2017-07-21T12:23:36.880Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Centos7下安装JDK"><a href="#Centos7下安装JDK" class="headerlink" title="Centos7下安装JDK"></a>Centos7下安装JDK</h1><h2 id="准备JDK"><a href="#准备JDK" class="headerlink" title="准备JDK"></a>准备JDK</h2><p>JDK下载链接：<a href="http://pan.baidu.com/s/1mhQ2KeG" target="_blank" rel="external">http://pan.baidu.com/s/1mhQ2KeG</a> 密码：7v2w</p>
 <h2 id="将JDK上传到服务器上"><a href="#将JDK上传到服务器上" class="headerlink" title="将JDK上传到服务器上"></a>将JDK上传到服务器上</h2><p>SSH工具和FTP工具推荐使用:<a href="https://www.netsarang.com/xshell_download.html" target="_blank" rel="external">XSHELL</a>和<a href="https://www.netsarang.com/products/xfp_overview.html" target="_blank" rel="external">XFTP</a></p>
@@ -494,37 +484,6 @@
   </entry>
   
   <entry>
-    <title>说明</title>
-    <link href="http://www.itmasir.com/2017/07/17/%E8%AF%B4%E6%98%8E/"/>
-    <id>http://www.itmasir.com/2017/07/17/说明/</id>
-    <published>2017-07-17T06:48:56.000Z</published>
-    <updated>2017-07-21T12:23:36.884Z</updated>
-    
-    <content type="html"><![CDATA[<hr>
-<h2 id="博客说明"><a href="#博客说明" class="headerlink" title="博客说明"></a>博客说明</h2><p>​    欢迎来到我的博客,我将在这里更新一下小的知识点,以及java方面的知识</p>
-<h2 id="请关注我"><a href="#请关注我" class="headerlink" title="请关注我"></a>请关注我</h2><h3 id="GITHUB"><a href="#GITHUB" class="headerlink" title="GITHUB"></a>GITHUB</h3><p>​    <a href="https://github.com/maruilong" target="_blank" rel="external">马睿隆</a></p>
-<h3 id="QQ"><a href="#QQ" class="headerlink" title="QQ"></a>QQ</h3><p>​    774328384</p>
-<a id="more"></a>
-<h2 id="最近的动态"><a href="#最近的动态" class="headerlink" title="最近的动态"></a>最近的动态</h2><p>​     最近在阅读 java编程思想这本书,同时我的阅读进度和笔记在<a href="https://github.com/maruilong" target="_blank" rel="external">GITHUB</a>上同步更新</p>
-<h3 id="date-2017-07-06-14-48-56"><a href="#date-2017-07-06-14-48-56" class="headerlink" title="date :2017-07-06 14:48:56"></a>date :2017-07-06 14:48:56</h3><p>​    <a href="https://github.com/maruilong/think_in_java-string" target="_blank" rel="external">String对象</a></p>
-<h3 id="date-2017-07-17-21-05-23"><a href="#date-2017-07-17-21-05-23" class="headerlink" title="date :2017-07-17 21:05:23"></a>date :2017-07-17 21:05:23</h3><p>​    <a href="https://github.com/maruilong/think_in_java-typeinfo" target="_blank" rel="external">类型信息</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;h2 id=&quot;博客说明&quot;&gt;&lt;a href=&quot;#博客说明&quot; class=&quot;headerlink&quot; title=&quot;博客说明&quot;&gt;&lt;/a&gt;博客说明&lt;/h2&gt;&lt;p&gt;​    欢迎来到我的博客,我将在这里更新一下小的知识点,以及java方面的知识&lt;/p&gt;
-&lt;h2 id=&quot;请关注我&quot;&gt;&lt;a href=&quot;#请关注我&quot; class=&quot;headerlink&quot; title=&quot;请关注我&quot;&gt;&lt;/a&gt;请关注我&lt;/h2&gt;&lt;h3 id=&quot;GITHUB&quot;&gt;&lt;a href=&quot;#GITHUB&quot; class=&quot;headerlink&quot; title=&quot;GITHUB&quot;&gt;&lt;/a&gt;GITHUB&lt;/h3&gt;&lt;p&gt;​    &lt;a href=&quot;https://github.com/maruilong&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;马睿隆&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;QQ&quot;&gt;&lt;a href=&quot;#QQ&quot; class=&quot;headerlink&quot; title=&quot;QQ&quot;&gt;&lt;/a&gt;QQ&lt;/h3&gt;&lt;p&gt;​    774328384&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="说明" scheme="http://www.itmasir.com/categories/%E8%AF%B4%E6%98%8E/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>String阅读完成</title>
     <link href="http://www.itmasir.com/2017/07/07/String%E9%98%85%E8%AF%BB%E5%AE%8C%E6%88%90/"/>
     <id>http://www.itmasir.com/2017/07/07/String阅读完成/</id>
@@ -552,38 +511,6 @@
       <category term="java编程思想" scheme="http://www.itmasir.com/tags/java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"/>
     
       <category term="String" scheme="http://www.itmasir.com/tags/String/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://www.itmasir.com/2017/07/06/hello-world/"/>
-    <id>http://www.itmasir.com/2017/07/06/hello-world/</id>
-    <published>2017-07-06T08:36:36.000Z</published>
-    <updated>2017-07-21T12:23:36.881Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<a id="more"></a>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
     
   </entry>
   
